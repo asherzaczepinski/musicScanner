@@ -37,7 +37,7 @@ class Yolov10DetectionModel(DetectionModel):
             model.to(self.device)
             self.set_model(model)
         except Exception as e:
-            raise TypeError("model_path is not a valid yolov8 model path: ", e)
+            raise TypeError("model_path is not a valid yolov10 model path: ", e)
 
     def set_model(self, model: Any):
         """

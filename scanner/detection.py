@@ -17,7 +17,7 @@ model_weights = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'weigh
 detection_model = Yolov10DetectionModel(
     model_path=model_weights,
     confidence_threshold=0.5,
-    device="cuda:0", # 'cpu' or 'cuda:0'
+    device="cpu", # 'cpu' or 'cuda:0'
 )
 
 def detect_everything(
