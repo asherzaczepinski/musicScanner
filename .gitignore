@@ -164,3 +164,7 @@ dataset/*
 runs/*
 yolo/test/*
 yolo/roboflow_load_weights.py
+
+# Input and Output folders
+input/
+output/
