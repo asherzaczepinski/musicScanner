@@ -26,7 +26,7 @@ output_image = visualize_predictions(
 )
 
 # Save result
-output_path = "test_detection_output.png"
+output_path = "output/test_detection_output.png"
 cv2.imwrite(output_path, cv2.cvtColor(output_image, cv2.COLOR_RGB2BGR))
 print(f"Saved result to: {output_path}")
 

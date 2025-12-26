@@ -67,7 +67,7 @@ def main():
         hide_labels=False,
         hide_conf=False
     )
-    output1_path = 'output_1_everything.png'
+    output1_path = 'output/output_1_everything.png'
     cv2.imwrite(output1_path, cv2.cvtColor(output1, cv2.COLOR_RGB2BGR))
     print(f"  ✓ {output1_path} - All objects with labels")
 
@@ -78,7 +78,7 @@ def main():
         hide_labels=False,
         hide_conf=False
     )
-    output2_path = 'output_2_filtered_with_labels.png'
+    output2_path = 'output/output_2_filtered_with_labels.png'
     cv2.imwrite(output2_path, cv2.cvtColor(output2, cv2.COLOR_RGB2BGR))
     print(f"  ✓ {output2_path} - Noteheads & accidentals with labels")
 
@@ -89,7 +89,7 @@ def main():
         hide_labels=True,
         hide_conf=True
     )
-    output3_path = 'output_3_filtered_boxes_only.png'
+    output3_path = 'output/output_3_filtered_boxes_only.png'
     cv2.imwrite(output3_path, cv2.cvtColor(output3, cv2.COLOR_RGB2BGR))
     print(f"  ✓ {output3_path} - Noteheads & accidentals boxes only")
 
